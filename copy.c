@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-/* count characters in input ; 1st version */
+/* copy input to output; 1st version */
 main()
 {
-   long nc;
+   int c;
    
-   nc=0;
-   while (getchar() != EOF)
-      ++nc;
-   printf("%ld\n", nc);
-
+   c = getchar();
+   while (c != EOF) {
+      putchar(c);
+      c = getchar();
+   }
 }
